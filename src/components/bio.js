@@ -54,11 +54,9 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> , Developer biasa yang haus akan ilmu baru .
+        Di Tulis by <strong>{author}</strong> , Developer biasa yang haus akan ilmu baru .
         {` `}
-        <a href={`https://facebook.com/${social.facebook}`}>
-          You should follow him on Facebook
-        </a>
+       
       </p>
     </div>
   )

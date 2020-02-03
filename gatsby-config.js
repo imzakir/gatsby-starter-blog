@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Muhammad Zakir Ramadhan`,
-    author: `ZakirDotID`,
+    author: `zakir`,
     description: `Seorang Developer Biasa Yang Haus Akan Ilmu Baru..`,
     siteUrl: `https://zakir.netlify.com/`,
     social: {
@@ -58,8 +58,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Muhammad Zakir Ramadhan`,
+        short_name: `Zakir`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
