@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Muhammad Zakir Ramadhan`,
     author: `ZakirDotID`,
-    description: `Belajarlah , tidak ada kata terlamanbat untuk dapat mencapai sesuatu.`,
+    description: `Seorang Developer Biasa Yang Haus Akan Ilmu Baru..`,
     siteUrl: `https://zakir.netlify.com/`,
     social: {
       twitter: `zakirramadhan`,
