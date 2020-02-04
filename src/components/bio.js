@@ -16,7 +16,7 @@ const Bio = () => {
     query BioQuery {
       avatar: file(absolutePath: { regex: "/fotoku.jpg/" }) {
         childImageSharp {
-          fixed(width: 50, height: 50) {
+          fixed(width: 150, height: 50) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -51,7 +51,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Di Tulis by <strong>{author}</strong> , Developer biasa yang haus akan ilmu baru .
+       Profile <strong>{author}</strong> , Hai nama saya Muhammad Zakir Ramadhan , saya adalah developer backend di usia 17thn , dengan pendidikan terkahir SMA. Saya lahir di Makassar 20 Tahun silam dan tinggal di Jakarta dengan Pekerjaan sebagai Developer .
         {` `}
        
       </p>

@@ -3,49 +3,37 @@ import { Link } from "gatsby"
 
 import { rhythm } from "../utils/typography"
 
+const ListLink = props => (
+  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
+    <Link to={props.to}>{props.children}</Link>
+  </li>
+)
+
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
   let header
 
   if (location.pathname === rootPath) {
     header = (
-      <h3
-        style={{
-          marginBottom: rhythm(1.5),
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
+      <header style={{ marginBottom: `1.5rem` }}>
+      <h3 style={{ display: `inline` }}>{title}</h3>
+      <ul style={{ listStyle: `none`, float: `right` }}>
+        <ListLink to="/">Home</ListLink>
+        <ListLink to="/about/">About</ListLink>
+        <ListLink to="/contact/">Contact</ListLink>
+      </ul>
+    </header>
     )
   } else {
     header = (
-      <h3
-        style={{
-          fontFamily: `Montserrat, sans-serif`,
-          marginTop: 0,
-        }}
-      >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to={`/`}
-        >
-          {title}
-        </Link>
-      </h3>
+      <header style={{ marginBottom: `1.5rem` }}>
+      <h3 style={{ display: `inline` }}>{title}</h3>
+      <ul style={{ listStyle: `none`, float: `right` }}>
+        <ListLink to="/">Home</ListLink>
+        <ListLink to="/about/">About</ListLink>
+        <ListLink to="/contact/">Contact</ListLink>
+      </ul>
+    </header>
     )
   }
   return (
